@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test",
     "eject": "react-scripts eject",
-    "test:pact": "cross-env CI=true react-scripts test --testTimeout 30000 pact.spec.js",
+    "echo": "npm -v && node -v",
+    "test:pact": "npm run echo && cross-env CI=true react-scripts test --testTimeout 30000 pact.spec.js",
     "test:nock": "cross-env CI=true react-scripts test --testTimeout 30000 nock.spec.js",
     "test:record": "cross-env CI=true react-scripts test --testTimeout 30000 record.spec.js"
   },
